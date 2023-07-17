@@ -1,0 +1,152 @@
+body {
+  text-align: center;
+}
+
+.box {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  background-color: #e74c3c;
+  border: 1px solid #c0392b;
+  color: #444;
+  display: inline-block;
+  font-weight: 700;
+  width: 150px;
+  height: 200px;
+  -webkit-transition: 1s cubic-bezier(.5, 1, .75, 1);
+  -moz-transition: 1s cubic-bezier(.5, 1, .75, 1);
+  transition: 1s cubic-bezier(.5, 1, .75, 1);
+}
+
+.box:hover.box--rotateX {
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg); 
+  transform: rotateX(180deg);
+}
+
+.box:hover.box--rotateY {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);   
+  transform: rotateY(180deg);
+}
+
+.box:hover.box--rotateZ {
+  -webkit-transform: rotateZ(180deg);
+  -moz-transform: rotateZ(180deg);   
+  transform: rotateZ(180deg);
+}
+
+/* transform scale */
+
+*, *::before, *::after{
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  
+  -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+}
+
+.container{
+  width: 1024px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  text-align: center;
+}
+
+figure{
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  border: 5px solid #fff;
+  box-shadow: 0 0 5px #ddd;
+  margin: 1em;
+}
+
+figcaption{
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+figcaption div{
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  top: 20px;
+  opacity: 0;
+  color: #2c3e50;
+  text-transform: uppercase;
+}
+
+figcaption div:after{
+  position: absolute;
+  content: "";
+  left: 0; right: 0;
+  bottom: 40%;
+  text-align: center;
+  margin: auto;
+  width: 0%;
+  height: 2px;
+  background: #2c3e50;
+}
+
+figure img{
+  -webkit-transition: all 0.5s linear;
+          transition: all 0.5s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+          transform: scale3d(1, 1, 1);
+}
+
+figure:hover figcaption{
+ background: rgba(255,255,255,0.3);
+}
+
+figcaption:hover div{
+  opacity: 1;
+  top: 0;
+}
+
+figcaption:hover div:after{
+  width: 50%;
+}
+
+figure:hover img{
+  -webkit-transform: scale3d(1.2, 1.2, 1);
+          transform: scale3d(1.2, 1.2, 1);
+}
+
+/* akropolis */
+
+.deze {
+  width: 1024px;
+  max-width: 100%;
+  margin: auto;
+}
+
+.square {
+  height: 150px;
+  width: 300px;
+  background-color: #ff2626;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  color: #fff;
+  padding: 40px;
+  font-size: 2em;
+  transition: transform 5s;
+}
+
+.square:hover {
+    transform: translateX(200px);
+}
+

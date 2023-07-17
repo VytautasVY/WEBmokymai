@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>CSS Transitions - Visibility</title>
+        <meta name="description" content="Transition Visibility">
+        <link rel="stylesheet" href="visibility.css">
+    </head>
+    <body>
+        <button id="toggle" class="btn">Fade In / Fade Out</button>
+        <div id="content" class="content">Rodome ir slepiame šį turinį su CSS klase ir šiek tiek Javascript.</div>
+
+        <div class="description">
+          <h1>Fading in ir fading out be display: none;</h1>
+          <p><b>Problema:</b> naudojant display: none; display: block galime paslėpti arba parodyti elementą, tačiau negalime pridėti transition ar animacijos.</p>
+          <p><b>Sprendimas:</b> nustatme opacity: 0; ir visibility: hidden; kaip pradinius parametrus. Pridedame šiam elementui CSS klasę ir kai yra click įvykis tie parametrai pakeičiami į opacity: 1; visibility: visible. Skirtingai nuo display, opacity ir visibility gali turėti transition.</p>
+        </div> 
+        <script>
+            var toggle = document.getElementById('toggle');
+            var content = document.getElementById('content');
+
+            toggle.addEventListener('click', function(){
+              content.classList.toggle('open');
+              console.log('mygtukas paspaustas');
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+/* header */
+
+body {
+    margin:0;
+}
+
+.top-header {
+    background-color: #000;
+}
+
+.top-header .container, .nav-header .container {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.top-header ul, .nav-header ul {
+    display:flex;
+    list-style:none;
+    padding:0;
+    margin:10px 0;
+}
+
+.container {
+    margin:0 auto;
+    max-width:1200px;
+}
+
+.contact-header ul li {
+    margin-right:30px;
+}
+
+.social-header ul li {
+    margin-left: 15px;
+}
+
+.top-header a {
+    color: #fff;
+    text-decoration:none;
+}
+
+.nav-list li a {
+    color: #ccc;
+    text-decoration:none;
+}
+
+.nav-list li {
+    margin-left: 30px;
+}
+
+.logo {
+    margin:20px 0;
+}
+

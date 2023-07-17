@@ -1,0 +1,73 @@
+section {
+    background-color: #ff4498;
+    font-family:Verdana, sans-serif;
+    color:#fff;
+    border:none;
+    border-radius:15px;
+    max-width: 300px;
+    height:auto;
+    padding: 20px;
+    box-shadow: 2px 2px 5px -1px #000;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+p:last-child {
+    padding-top: 0;
+}
+
+.btn {
+    display: block;
+    border-radius: 10px;
+    font-size:1em;
+    box-shadow: 2px 2px 5px -1px #000;
+    background-color:#0089ce;
+    color:#fff;   
+    text-decoration: none;
+    padding: 20px 40px;
+    transition: background-color 0.8s, color 0.8s;
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    width: 70%;
+    margin: 10px auto 0;
+    text-align: center;
+    transition: all 0.3s;
+    overflow: hidden !important;
+
+}
+
+span.btn:hover {
+    background-color:#035077;
+    color:#e3e3e3;
+}
+
+.top {
+    top:0;
+    opacity: 1;
+}
+
+.btn:hover .top {
+    top:-20px;
+    opacity: 0;
+}
+
+.bottom {
+    top:20px; 
+    opacity: 0;
+}
+
+.btn:hover .bottom{
+    top:0;
+    opacity: 1;
+}
+
+a.btn.btn-pirkti:hover {
+    background-color:#035077;
+    color:#e3e3e3;
+}
+

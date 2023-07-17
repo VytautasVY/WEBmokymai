@@ -1,0 +1,86 @@
+html, body{
+    background-color: beige;
+    margin: 10px;
+}
+.container div{
+    border-radius:3px;    
+}
+
+.red {
+    background-color: red;
+}
+.blue {
+    background-color: blue;
+}
+.green {
+    background-color: green;
+}
+
+.purple {
+    background-color: purple;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+/* solution 1
+.container{
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 50px);
+}
+
+.red {
+    grid-column:1 / span 2;
+}
+
+.blue {
+    grid-column:3 / span 2;
+}
+
+.green{
+    grid-column: 1 / span 1;
+}
+
+.purple{
+    grid-column: 2 / span 3;
+}
+
+.yellow{
+    grid-column: 1 / span 4;
+} */
+
+ 
+
+.container {
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 50px);
+    grid-template-areas:
+        "r r b b"
+        "g p p p"
+        "y y y y";
+}
+
+.red {
+    grid-area: r;
+}
+
+.blue {
+    grid-area: b;
+}
+
+.green {
+    grid-area: g;
+}
+
+.purple {
+    grid-area: p
+}
+
+.yellow {
+    grid-area: y;
+} 
