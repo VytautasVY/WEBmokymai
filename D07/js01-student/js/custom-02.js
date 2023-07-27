@@ -30,24 +30,35 @@ let kiekMenSpausdinti = 12;
 Po 1 mėnesio(-ių) bus 16 avių!
 Po 2 mėnesio(-ių) bus 64 avių!
 */
-let numAvys = 4;
-let numMenuo = 1;
-let kiekMenSpausdinti = 12;
+// let numAvys = 4;
+// let numMenuo = 1;
+// let kiekMenSpausdinti = 12;
 
-let sheepCount = numMenuo;
+// let month = 1;
+// let numSheep = numMenuo;
 
-while (numMenuo <= kiekMenSpausdinti) {
-  console.log("Po", numMenuo,"menesio(-ių)", "- Sheep Count:", sheepCount);
-  sheepCount *= numAvys;
-  numMenuo++;
-}
+// while (month <= kiekMenSpausdinti) {
+//   numSheep *= numAvys;
+//   console.log(`Po ${month} mėnesio(-ių) bus ${numSheep} avių!`);
+//   month++;
+// }
+
 
 /*
 Užduotis 4
 Atlikite užduotį JS 03 su for loop
 */
 
+let numAvys = 4;
+    let numMenuo = 1;
+    let kiekMenSpausdinti = 12;
 
+    let numSheep = numMenuo;
+
+    for (let month = 1; month <= kiekMenSpausdinti; month++) {
+      numSheep *= numAvys;
+      console.log(`Po ${month} mėnesio(-ių) bus ${numSheep} avių!`);
+    }
 
 /*
 Užduotis 5
@@ -61,8 +72,22 @@ let currentGen = 1;
 let totalGen = 19;
 let totalMW = 0;
 */
+    // let currentGen = 1;
+    // let totalGen = 19;
+    // let totalMW = 0;
 
+  
+    // while (currentGen <= 4) {
+    //   totalMW += 62;
+    //   console.log(`Generatorius #${currentGen} įjungtas, pridėjo 62 MW, viso generuojama ${totalMW} MW!`);
+    //   currentGen++;
+    // }
 
+   
+    // for (; currentGen <= totalGen; currentGen++) {
+    //   totalMW += 124;
+    //   console.log(`Generatorius #${currentGen} įjungtas, pridėjo 124 MW, viso generuojama ${totalMW} MW!`);
+    // }
 
 /*
 Užduotis 6
@@ -78,7 +103,18 @@ let totalGen = 19;
 let totalMW = 0;
 */
 
+let totalGen = 19;
+let totalMW = 0;
 
+for (let currentGen = 1; currentGen <= totalGen; currentGen++) {
+  if (currentGen % 2 === 0) {
+    totalMW += 62;
+    console.log(`Generatorius #${currentGen} įjungtas, pridėjo 62 MW, viso generuojama ${totalMW} MWĄ`);
+  } else {
+    console.log(`Generatorius #${currentGen} išjungtas.`);
+  }
+
+}
 
 /*
 Užduotis 7
@@ -93,13 +129,32 @@ num--;
 }
 */
 
-
+let num5 = 10;
+while (num5 >= 2) {
+  if (num5 % 2 === 0) {
+    console.log(num5);
+  }
+  num5--;
+}
 
 /*
 Užduotis 8
 Sukurk funkciją maxOf2, kuri priima du skaičius ir gražina didesnį skaičių. Nepamiršk galimybės, kad skaičiai bus lygūs. Tuo atveju gražink vieną iš skaičių.
 */
 
+function maxOf2(num8, num9) {
+  if (num8 >= num9) {
+    return num8;
+  } else {
+    return num9;
+  }
+}
+
+// tikrinam funkcija
+const num8 = 10;
+const num9 = 20;
+const result = maxOf2(num8, num9);
+console.log(`Didesnis skaičius yra: ${result}`)
 
 
 /*
@@ -117,7 +172,10 @@ Būtinos sąlygos:
 Rezultatas:
 Lietuvoje šiuo metu -3.3 laipsnių pagal Celsijų
 */
+const fahrenheit = 26;
+const celsius = (fahrenheit - 32) * (5 / 9);
 
+console.log(`Lietuvoje šiuo metu ${celsius.toFixed(1)} laipsnių pagal Celsijų`);
 
 
 /*

@@ -87,6 +87,20 @@ Sugeneruokite 300 atsitiktinių skaičių nuo 0 iki 300, atspausdinkite juos ats
 /* 02.
 Vienoje eilutėje atspausdinkite visus skaičius nuo 1 iki 3000, kurie dalijasi iš 77 be liekanos. Skaičius atskirkite kableliais. Po paskutinio skaičiaus kablelio neturi būti.
 */
+let result = "";
+
+for (let num = 1; num <= 3000; num++) {
+  if (num % 77 === 0) {
+    result += num;
+    
+    // Add comma if the number is not the last one
+    if (num !== 3000) {
+      result += ",";
+    }
+  }
+}
+
+console.log(result);
 
 /* 03.
 Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
@@ -98,3 +112,14 @@ Nupieškite kvadratą iš “*”, kurio kraštines sudaro 10 “*”.
 * * * * * * * * * * *
 * * * * * * * * * * *
 */
+
+const kraštinesIlgis = 10;
+
+for (let i = 0; i < kraštinesIlgis; i++) {
+  let line = "";
+  for (let j = 0; j < kraštinesIlgis; j++) {
+    line += "* ";
+  }
+  console.log(line);
+
+}

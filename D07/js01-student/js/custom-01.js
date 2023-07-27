@@ -215,18 +215,7 @@ console.log(`updatedAverage: ${Math.round(updatedAverage)}`)
 Padarykite skaitmeninį laikrodį, rodantį valandas, minutes ir sekundes. Valandom, minutėm ir sekundėm sugeneruoti panaudokite funkciją Math.random(). Sugeneruokite skaičių nuo 0 iki 300. Tai papildomos sekundės. Skaičių pridėkite prie jau sugeneruoto laiko. Atspausdinkite laikrodį prieš ir po sekundžių pridėjimo ir pridedamų sekundžių skaičių.
 */
 
-// let hours = Math.round(Math.random() * 25)
-// let minutes = Math.round(Math.random() * 61)
-// let seconds = Math.round(Math.random() * 61)
-//     console.log(`laikas: ${hours}:${minutes}:${seconds}`)
 
-// let extraSeconds = Math.floor(Math.random() * 301)
-//     console.log(`papildomos sekundes: ${extraSeconds}`)
-
-// // extra sekundes pridedamos prie sekundziu
-// seconds = seconds + extraSeconds
-
-// let totalTime = 
 
 
 
@@ -234,15 +223,18 @@ Padarykite skaitmeninį laikrodį, rodantį valandas, minutes ir sekundes. Valan
 Naudokite funkciją Math.random(). Sugeneruokite 6 kintamuosius su atsitiktinėm reikšmėm nuo 1000 iki 9999. Atspausdinkite reikšmes viename string'e, išrūšiuotas nuo didžiausios iki mažiausios, atskirtas tarpais. Naudoti ciklų ir masyvų NEGALIMA.
 */
 
-// let nr1 = Math.ceil(Math.random() * 9000) + 1000
-// let nr2 = Math.ceil(Math.random() * 9000) + 1000
-// let nr3 = Math.ceil(Math.random() * 9000) + 1000
-// let nr4 = Math.ceil(Math.random() * 9000) + 1000
-// let nr5 = Math.ceil(Math.random() * 9000) + 1000
-// let nr6 = Math.ceil(Math.random() * 9000) + 1000
-//     console.log(`Skaiciai: ${nr1}, ${nr2}, ${nr3}, ${nr4}, ${nr5}, ${nr6}`)
+const var1 = Math.floor(Math.random() * 9000) + 1000;
+const var2 = Math.floor(Math.random() * 9000) + 1000;
+const var3 = Math.floor(Math.random() * 9000) + 1000;
+const var4 = Math.floor(Math.random() * 9000) + 1000;
+const var5 = Math.floor(Math.random() * 9000) + 1000;
+const var6 = Math.floor(Math.random() * 9000) + 1000;
 
-//     let maxreiksme = Math.max(nr1, nr2, nr3, nr4, nr5, nr6)
-//     let minreiksme = Math.min(nr1, nr2, nr3, nr4, nr5, nr6)
-   
-//     console.log(`from ${maxreiksme.substr(maxreiksme)} to ${minreiksme.substr(minreiksme)}`)
+
+const min1 = Math.min(var1, var2, var3, var4, var5, var6);
+const max1 = Math.max(var1, var2, var3, var4, var5, var6);
+const min2 = Math.min(var1, var2, var3, var4, var5, var6, max1);
+const max2 = Math.max(var1, var2, var3, var4, var5, var6, min1);
+
+
+console.log(max1, max2, min2, min1, min2, max1);
