@@ -1,0 +1,890 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.flex-container {
+    display: flex;
+    width: 100%;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: #8f3dac58;
+}
+
+.site-header .container {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main-nav li, li {
+    list-style: none;
+}
+
+.main-nav a {
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 10px 17px;
+    color:#000;
+    
+}
+
+.signup-button {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: black;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-left-color: black;
+    border-radius:5px;
+}    
+
+.main-nav a:hover, .main-nav a:active {
+    background-color:beige;
+    border-radius: 5px;
+}
+
+.mobile-nav {
+    display:none;
+}
+
+.logo {
+    padding: 55px 0;
+}
+
+/* HERO section */
+
+.hero {
+    width: 100%;
+    max-width: 80rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.heroText {
+    float:left;
+    width:50%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.heroPhoto {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+.heroPhoto img {
+    margin-right: -150px;
+    width: 60%;
+}
+
+.heroText h1 {
+    font-family: 'Volkhov', sans-serif;
+    font-size:84px;
+    text-transform:none;
+    color: #181E4B;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    width: 100%;
+}
+
+.heroText h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #DF6951;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    align-content: center;
+    width:100%;
+}
+
+.heroDescription {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #5E6282;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    width: 438px;
+}
+
+.heroText a {
+    padding-top: 0.875rem;
+    padding-right: 1.625rem;
+    padding-bottom: 0.875rem;
+    padding-left: 1.625rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-family: Poppins, sans-serif;
+    font-size: 1.125rem;
+    background-color: #DF6951;
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero a:hover {
+    background-color: #e64a19;
+}
+
+.heroText .bi {
+    margin-left: 16px;
+    font-family: Poppins, sans-serif;
+    color: #686d77;
+
+}
+
+.heroText .bi::before {
+    filter: drop-shadow(0 15px 15px rgba(223, 105, 81, 0.5));
+    color: #DF6951;
+    width: 40px;
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+    
+}
+
+/* Services Section Styles */
+
+.services {
+    position: relative;
+    text-align: center; 
+    padding: 130px;
+}
+
+.image-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateY(-2%);
+    margin-right: 50px;
+}
+.services h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.services h2 {
+    font-family: 'Volkhov', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service {
+    text-align: center;
+    max-width: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}
+
+.service-row {
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    
+}
+
+.service {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.decore3-container {
+    position: absolute;
+    top: 250px;
+    left: 0;
+    z-index: -1;
+}
+
+.decore3-container img {
+    max-width: 50px;
+}
+
+
+.service h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+/* Destinations Section Styles */
+
+.destinations {
+    padding: 130px;
+}
+
+.destinations h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.destinations p {
+    font-family:'Volkhov', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.topDestination {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: normal;
+}
+
+.topDestination img {
+    max-width: 300px;
+    margin: 0 95px;
+    display: block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    cursor: pointer;
+    width: 50%;
+}
+
+.topDestination h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.topDestination .bi {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+
+
+/* Book a trip section */
+
+.container.bookaTrip {
+    padding: 60px 0;
+    display: flex;
+    align-items: center; 
+}
+.bookaTripText h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    width:50%;
+    font-weight: normal;
+}
+
+.bookaTripText h2 {
+    font-family: 'Volkhov', sans-serif;
+    font-size:50px;
+    text-transform:capitalize;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    width: 70%;
+    padding-top: 5%;
+
+}
+
+.bookaTripText i.bi-square-fill {
+    font-size: 30px;
+    color:#F0BB1F;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bookaTripText i.bi-water {
+    font-size: 30px;
+    background-color:#F15A2B;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bookaTripText i.bi-taxi-front {
+    font-size: 30px;
+    background-color:#006380;
+    margin-bottom: 15px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.bookaTripText {
+    text-align: left;
+    max-width: 800px;
+    margin-right: 40px;
+  }
+
+.text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-top: 3%;
+  }
+  
+.text i.bi {
+    font-size: 30px;
+    margin-right: 15px;
+  }
+  
+.text-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+.text h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+.text p {
+    font-size: 16px;
+    margin: 0;
+  }
+
+.bookaTripText {
+    text-align: left;
+    max-width: 800px;
+    margin-right: 40px; 
+}
+
+.section-content.flex-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; 
+}
+
+.tripToGreece img {
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 10px 30px 20px  rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials section */
+
+.testimonials {
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.testimonialsText {
+    max-width: 50%;
+    margin-bottom: 100px;
+}
+
+.testimonialsText h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    width: 50%;
+    font-weight: normal;
+}
+
+.testimonialsText h2 {
+    font-family: 'Volkhov', sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    text-align: left;
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 10%;
+}
+
+.customersReview {
+    position: absolute;
+    top: -150px; 
+    left: 2%;
+    transform: translateX(50%);
+    width: 504px;
+    height: 245px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    overflow: hidden;
+}
+
+.customersReview img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    width:10%;
+    height: auto;
+}
+
+.customersReview p,
+.customersReview h2,
+.customersReview h3 {
+    margin-bottom: 5px;
+    margin-top: 35px;
+}
+
+.customersReview h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.customersReview h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.customer2review {
+    position: absolute;
+    top: 32px;
+    right: 20%; 
+    transform: translateX(50%);
+    width: 502px;
+    height: 180px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 2%;
+}
+
+.customer2review h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.customer2review h3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* LOGOS */
+
+.container.logos {
+    padding: 60px 0;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logos img {
+    margin-right: 80px; 
+    width: 120px;
+}
+
+/* Subscribe section */
+
+.subscribe-container {
+    position: relative;
+    height: 407px;
+    background-color: #DFD7F9;
+    border-radius: 100px 10px 10px 10px;
+}
+
+.subscribe-container i.bi-send {
+    font-size: 30px;
+    color:#fff;
+    margin-left: 95%;
+    margin-top: -1%;
+     display: inline-block;
+    border-radius: 60px;
+    background-color: #747DEF;
+    padding: 0.5em 0.7em;
+}
+
+.input-field {
+    padding-left: 45px;
+    width: 400px;
+    height: 60px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+.subscribe-container {
+    position: relative;
+  }
+  
+.image-container {
+    position: absolute;
+    padding-top: 3%;
+    margin-left: 1130px;
+    z-index: -1;
+}
+
+.subscribe-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.subscribeDetails p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 33px;
+    margin: 0;
+    font-weight:normal;
+    text-align: center;
+    padding-top: 5%;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.input-row {
+    align-items: center; 
+    margin-top: -70px;
+    gap: 1rem;
+    padding-left: 20px;
+}
+
+.input-row i {
+     position: absolute;
+    padding-left: 20px;
+    padding-top: 18px;   
+}
+
+input[type="submit"] {
+    background-color: #ff9800;
+    color: #fff;
+    font-size: 16px;
+    
+    padding: 12px 20px;
+
+    margin-left: 20px;
+
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer {
+    padding:50px 0;
+}
+
+.footerJadoo h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 44px;
+    font-weight: 400;
+    width: 30%;
+}
+
+.footerJadoo p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    width: 30%;
+}
+
+.container .jadooInfo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+
+}
+
+.jadooInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 170px;
+    margin-top: -85px;
+    gap: 5rem;
+    flex: 1;
+}
+
+.jadooInfo-column {
+    display: grid;
+    grid-template-columns: 1fr; 
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+.jadooInfo-column h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.jadooInfo-column ul a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    text-decoration: none;
+    color:#000;
+}
+
+.jadooInfo-column ul li {
+    margin-bottom: 5px;
+}
+
+.social {
+    text-align: right;
+    margin-top: -160px; 
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+.social i {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -30px;
+    margin-right: 10px; 
+}
+
+.allRightsReserved {
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: normal;  
+}
+
+/* Default styles for all devices */
+
+/* Media for mobile devices */
+@media screen and (max-width: 767px) {
+
+    .site-header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .main-nav {
+      margin-top: 20px;
+    }
+  
+    .main-nav li {
+      margin: 5px 0;
+    }
+  
+    .logo {
+      padding: 20px 0;
+    }
+  
+    .language-selector {
+      margin-top: 20px;
+    }
+  
+    .hero {
+      padding: 20px;
+    }
+  
+    .heroText {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .heroPhoto img {
+      margin-right: 0;
+      width: 80%;
+    }
+  
+    .heroText h1 {
+      font-size: 32px; 
+    }
+  
+    .heroText h2 {
+      font-size: 20px;
+    }
+  
+    .heroDescription {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .services {
+      padding: 40px; 
+    }
+  
+    .service-row {
+      flex-direction: column; 
+      gap: 30px;
+    }
+  
+    
+    .service {
+      max-width: 100%; 
+    }
+  
+   
+    .destinations {
+      padding: 40px; /
+    }
+  
+    .topDestination img {
+      margin: 0 auto; 
+    }
+  
+  
+    .container.bookaTrip {
+      flex-direction: column; 
+    }
+  
+    .bookaTripText h1,
+    .bookaTripText h2 {
+      width: 100%; 
+      text-align: center; 
+    }
+  
+    .testimonials {
+      flex-direction: column;
+    }
+  
+    .testimonialsText h1,
+    .testimonialsText h2 {
+      width: 100%; 
+      text-align: center;
+    }
+  
+    
+    .subscribe-container {
+      height: auto; 
+      border-radius: 10px;
+    }
+  
+    .subscribe-container i.bi-send {
+      margin-left: 85%; 
+    }
+  
+    .input-field {
+      width: 100%; 
+    }
+  
+    .subscribe-content {
+      padding: 10px; 
+    }
+  
+   
+    .footerJadoo {
+      width: 100%; 
+      text-align: center;
+    }
+  
+    .footerJadoo p {
+      width: 100%;
+    }
+  
+    .jadooInfo {
+      display: flex;
+      flex-direction: row;
+      gap: 10px; 
+      justify-content: center;
+      margin-right: 0;
+      margin-top: 0;
+    }
+  
+    .jadooInfo-column {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 0;
+    }
+  
+    .jadooInfo-column h2 {
+      font-size: 16px; 
+    }
+  
+    .jadooInfo-column ul a {
+      font-size: 14px;
+    }
+  
+    .social {
+      text-align: center;
+      margin-top: 0; 
+      margin-bottom: 30px; 
+    }
+  
+    .allRightsReserved {
+      font-size: 12px;
+    }
+  }

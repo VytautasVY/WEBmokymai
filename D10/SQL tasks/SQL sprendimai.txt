@@ -1,0 +1,21 @@
+5
+SELECT movies.title, 
+COUNT(theatres_movies.movie_id)
+FROM theatres_movies
+JOIN movies
+ON movies.id = theatres_movies.movie_id
+group BY movies.title
+
+Task 2
+
+1,2,3 
+SELECT authors.name, authors.surname, books.title
+FROM authors
+JOIN books
+ON authors.id = books.author_id
+2. 
+SELECT authors.name, authors.surname, COUNT(books.id) AS book_count
+FROM authors
+LEFT JOIN books ON authors.id = books.author_id
+GROUP BY authors.name, authors.surname
+ORDER BY book_count DESC LIMIT 1
