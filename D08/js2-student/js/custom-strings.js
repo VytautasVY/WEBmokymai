@@ -154,3 +154,44 @@ console.log("Random String:", randomString);
 Parašykite kodą, kuris generuotų atsitiktinį stringą su 10 atsitiktine tvarka išdėliotų žodžių, o žodžius generavimui imtų iš 8-me uždavinyje pateiktų dviejų stringų. Žodžiai neturi kartotis. (reikės masyvo)
 */
 
+
+    const string3 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+    const string4 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+
+    const words1 = [];
+    let word = "";
+    for (let i = 0; i < string1.length; i++) {
+      const char = string3[i];
+      if (char === " " || i === string3.length - 1) {
+        words1.push(word);
+        word = "";
+      } else {
+        word += char;
+      }
+    }
+
+    const words2 = [];
+    word = "";
+    for (let i = 0; i < string3.length; i++) {
+      const char = string4[i];
+      if (char === " " || i === string4.length - 1) {
+        words2.push(word);
+        word = "";
+      } else {
+        word += char;
+      }
+    }
+
+    
+    const allWords = [...words1, ...words2];
+
+    while (selectedWords.length < 10 && allWords.length > 0) {
+      const randomIndex = Math.floor(Math.random() * allWords.length);
+      const randomWord = allWords.splice(randomIndex, 1)[0];
+      selectedWords.push(randomWord);
+    }
+    selectedWords.sort(() => Math.random() - 0.5);
+
+    const randomString1 = selectedWords.join(" ");
+
+    console.log("Random String with Unique Words:", randomString1);;
