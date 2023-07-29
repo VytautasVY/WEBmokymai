@@ -19,7 +19,8 @@
     <h2>We Offer Best Services</h2>
     <div class="service-row">
     <div class="service">
-        <img src="../app/images/Calculated weather.png" alt="Calculated Weather">
+        <img src="../app/images/Calculated weather.png"  alt="Calculated Weather">
+        <h2>Calculated Weather</h2>
         <h3>Built Wicket longer admire do barton vanity itself do in it.</h3>
     </div>
     <div class="service">
@@ -28,16 +29,19 @@
         </div>
         <img src="../app/images/Best flights.png" alt="Best flights">
         <div class="rectangle"></div>
+        <h2>Best Flights</h2>
         <h3>Engrossed listening. Park gate sell they west hard for the.</h3>
     </div>
 
     <div class="service">
-        <img src="../app/images/Local events.png" alt="Local events">
-        <h3>Barton vanity itself do in it. Preferd to men it engrossed listening. </h3>
+        <img src="../app/images/Local events.png"  alt="Local events">
+        <h2>Local events</h2>
+        <h3>Barton vanity itself do in it. Preferd to men it engrossed listening.</h3>
     </div>
 
     <div class="service">
         <img src="../app/images/Customization.png" alt="Customization">
+        <h2>Customization</h2>
         <h3>We deliver outsourced aviation services for military customers.</h3>
     </div>
 </div>
@@ -54,32 +58,54 @@
         <div class="section-content flex-container">
             <div class="topDestination">
                 <div class="destination-card">
-                    <a data-fancybox="gallery" data-src="../app/images/rome1-min.png" data-caption="Rome">
-                        <img src="../app/images/rome1-min.png" alt="Rome"/>
+                    <a data-fancybox="gallery" data-src="../app/images/rome2-min.png" data-caption="Rome">
+                        <img src="../app/images/rome2-min.png" alt="Rome" />
                     </a>
-                    <h3>Rome, Italy $5.42k</h3>
-                    <i class="bi bi-cursor-fill">10 days trip</i>
+                    <div class="card-info">
+                        <div class="card-locationprice">
+                            <div class="card-text">Rome, Italy&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $5.42k</div>
+                        </div>
+                            <div class="card-trip">
+                                <i class="bi bi-cursor-fill">10 days trip</i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="topDestination">
                 <div class="destination-card">
                     <a data-fancybox="gallery" data-src="../app/images/londonbigben-min.png" data-caption="London">
-                        <img src="../app/images/londonbigben-min.png" alt="London" />
+                        <img src="../app/images/londonbigben-min.png" alt="London"/>
                     </a>
-                    <h3>London, UK $4.2k</h3>
-                    <i class="bi bi-cursor-fill">12 days trip</i>
+                    <div class="card-info">
+                        <div class="card-locationprice">
+                            <div class="card-text">London, UK&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $4.2k</div>
+                        </div>
+                            <div class="card-trip">
+                                <i class="bi bi-cursor-fill">12 days trip</i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="topDestination">
                 <div class="destination-card">
                     <div class="destination-wrapper">
-                        <a data-fancybox="gallery" data-src="../app/images/Fulleurope.png" data-caption="Europe">
-                            <img src="../app/images/Fulleurope.png" alt="Europe" />
+                        <a data-fancybox="gallery" data-src="../app/images/Fulleurope1.jpg" data-caption="Europe">
+                            <img src="../app/images/Fulleurope1.jpg" alt="Europe"/>
                         </a>
+                        <div class="card-info">
+                            <div class="card-locationprice">
+                                <div class="card-text">Full Europe&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $15k</div>
+                            </div>
+                                <div class="card-trip">
+                                    <i class="bi bi-cursor-fill">28 days trip</i>
+                            </div>
                         </div>
                     </div>
-                    <h3>Full Europe $15k</h3>
-                    <i class="bi bi-cursor-fill">28 days trip</i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
                 </div>
             </div>
         </div>
@@ -122,25 +148,20 @@
     </div>
 </section>
 <section class="container testimonials">
-    <div class="testimonialsText">
-        <h1>Testimonials</h1>
-        <h2>What people say about Us.</h2>
-        <img src="../app/images/threedots.jpg" alt="threedots">
-    </div>
-    <div class="container testimonials">
-        <div class="customersReview">
-            <img src="../app/images/customer.png" alt="customer">
-            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same
-                as knew next. Of believed or diverted no.”</p>
-            <h2>Mike Taylor</h2>
-            <h3>Lahore, Pakistan</h3>
+        <div class="testimonialsText">
+            <h1>Testimonials</h1>
+            <h2>What people say about Us.</h2>
         </div>
-        <div class="customer2review">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, velit.</p>
-            <h2>Chris Thomas</h2>
-            <h3>CEO of Red Button</h3>
+        <div class="carousel">
+            <div class="carousel__item"><img src="../app/images/customer.png" alt="customer">
+            <p>“On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.”</p><h2>Mike Taylor</h2><h3>Lahore, Pakistan</h3>
+            </div>
+            <div class="carousel__item carousel__item--selected"><p>"Jadoo is recognized as one of the finest travel agency in the world. When it came to planning a trip, I found them to be dependable."</p><h2>Chris Thomas</h2>
+                <h3>CEO of Red Button</h3>
         </div>
-</section>
+            <div class="carousel__item"><p>"Jadoo is recognized as one of the finest travel agency in the world."</p><h2>Thomas Wagon</h2></div>
+        </div>
+    </section>
 <section class="container logos">
     <div class="logos">
         <img src="../app/images/axon.png" alt="axon">
@@ -170,3 +191,4 @@
             </div>
         </div>
 </section>
+

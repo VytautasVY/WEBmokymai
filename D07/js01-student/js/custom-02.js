@@ -40,7 +40,7 @@ Po 2 mėnesio(-ių) bus 64 avių!
 // while (month <= kiekMenSpausdinti) {
 //   numSheep *= numAvys;
 //   console.log(`Po ${month} mėnesio(-ių) bus ${numSheep} avių!`);
-//   month++;
+//   numMenuo++;
 // }
 
 

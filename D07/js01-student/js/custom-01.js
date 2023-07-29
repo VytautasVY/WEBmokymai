@@ -39,7 +39,7 @@ console.log("skaiciai: "+ u + ", "+ o + ", "+ p)
 
 let largest = Math.max(u,o,p)
 let smallest = Math.min(u,o,p)
-let middleNum
+let middleNum;
 
 if(u != largest && u != smallest) {
     middleNum = u

@@ -93,7 +93,6 @@ for (let num = 1; num <= 3000; num++) {
   if (num % 77 === 0) {
     result += num;
     
-    // Add comma if the number is not the last one
     if (num !== 3000) {
       result += ",";
     }
