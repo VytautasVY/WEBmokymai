@@ -942,3 +942,100 @@ body {
 }
 
 
+
+@media all and (max-width:980px) {
+  .main-nav {
+      display:none;
+  }
+  .site-header .container {
+      display:block;
+  }
+  .logo {
+      float:left;
+  }
+  .mobile-nav {
+      display:block;
+      position:relative;
+      width:100%;
+  }
+  .mobile-nav li {
+      list-style: none;
+  }
+  .mobile-nav ul {
+      flex-direction: column;
+      position:absolute;
+      top: 133px;
+      padding:20px;
+      background-color: beige;
+      width:100%;
+      display:none;
+  }
+  .mobile-nav a {
+      color: #000;
+      font-size:1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin:0 5px;
+      padding:10px 17px;
+      display:block;
+  }
+  .mobile-nav a:hover, .mobile-nav a:active {
+      background-color: beige;
+      border-radius: 5px;
+      color: #000;
+  }
+  .mobile-nav a.icon {
+      display:block;
+      position:absolute;
+      right:0;
+      top:60px;
+      color: #000;
+  }
+
+  .services {
+    position: relative;
+    text-align: center;
+    padding: 100px;
+    margin-top: 250px;
+  }
+  .service {
+      /* max-width: 200px; */
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      /* justify-content: center; */
+      position: relative;
+      text-align: center;
+      padding: 30px;
+}
+
+.bookaTripText {
+    text-align: center;
+  
+}
+
+.bookaTripText h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin: 0;
+  align-content: center;
+  width: 50%;
+  font-weight: normal;
+}
+
+.container.bookaTrip {
+  display: flex;
+  align-items: center;
+  padding: 10%;
+}
+
+.testimonials {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+}

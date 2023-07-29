@@ -288,7 +288,7 @@ section > .container {
         position:absolute;
         right:0;
         top:60px;
-        color:#fff;
+        color: #e64a19;
     }
     .services .section-content {
         flex-direction: column;
