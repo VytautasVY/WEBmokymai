@@ -15,7 +15,7 @@
                             <li><a href="#" class="signup-button">Sign Up</a></li>
                             <li class="language">
                                 <label for="language_id"></label>
-                                <select name="language" id="language_id">
+                                <select class="language-tr" name="language" id="language_id">
                                     <option value="English">EN</option>
                                     <option value="French">FR</option>
                                     <option value="German">DE</option>
