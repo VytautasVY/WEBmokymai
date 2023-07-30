@@ -253,7 +253,7 @@ body {
     display: flex;
     margin-right: 100px;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .decore3-container {
@@ -996,18 +996,29 @@ body {
     position: relative;
     text-align: center;
     padding: 100px;
-    margin-top: 250px;
+    padding-top: 20%;
   }
-  .service {
-      /* max-width: 200px; */
-      margin-bottom: 20px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      /* justify-content: center; */
-      position: relative;
-      text-align: center;
-      padding: 30px;
+.service {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+}
+
+.image-wrapper {
+  position: absolute;
+  top:20%;
+  right: 0;
+  transform: translateY(-2%);
+  margin-right: 2%;
+}
+
+.heroPhoto img {
+    margin-right: -150px;
+    width: 40%;
 }
 
 .bookaTripText {
@@ -1015,14 +1026,13 @@ body {
   
 }
 
+.heroText h1 {
+ font-size: 50px;
+}
+
+
 .bookaTripText h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 18px;
-  margin-bottom: 20px;
-  margin: 0;
-  align-content: center;
   width: 50%;
-  font-weight: normal;
 }
 
 .container.bookaTrip {
@@ -1036,6 +1046,23 @@ body {
   display: flex;
   justify-content: space-between;
  
+}
+
+.carousel__nav {
+    transform: translateX(-80%);
+}
+
+.carousel__item--selected {
+    width: 95%;
+}
+.container.logos {
+  padding: 60px 0;
+  justify-content: space-between;
+  padding-left: 2%;
+}
+
+.subscribe-container {
+  width: 97%;
 }
 
 }
