@@ -698,8 +698,6 @@ input[type="submit"] {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    flex-grow: 1;
-
 }
 
 .jadooInfo {
@@ -711,7 +709,6 @@ input[type="submit"] {
     margin-right: 170px;
     margin-top: -85px;
     gap: 5rem;
-    flex: 1;
 }
 
 .jadooInfo-column {
@@ -744,10 +741,10 @@ input[type="submit"] {
 }
 
 .social {
-  margin-left: 250px;
+  text-align: right;
+  margin-top: -160px; 
   margin-bottom: 50px;
   cursor: pointer;
-  display: inline-block;
 }
 
 .social i {
