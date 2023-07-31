@@ -1055,6 +1055,10 @@ input[type="submit"] {
   margin-left: 20px;
 }
 
+.footerJadoo p {
+  width: 25%;
+  margin-left: 10%;
+}
 .logos {
   display: block;
   text-align: center;
