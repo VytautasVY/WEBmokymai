@@ -682,16 +682,18 @@ input[type="submit"] {
 }
 
 .footerJadoo h1 {
-    font-family: 'Poppins', sans-serif;
-    font-size: 44px;
-    font-weight: 400;
-    width: 30%;
+  font-family: 'Poppins', sans-serif;
+  font-size: 44px;
+  font-weight: 400;
+  width: 30%;
+  margin-left: 5%;
 }
 
-.footerJadoo p {
+  .footerJadoo p {
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
     width: 30%;
+    margin-left: 5%;
 }
 
 .container .jadooInfo {
