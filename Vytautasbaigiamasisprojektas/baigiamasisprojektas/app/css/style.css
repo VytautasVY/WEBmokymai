@@ -33,11 +33,8 @@ body {
   height: 100px;
   margin-top: -150px;
   transform: scale(1.1);
-  /* float: right;
-  background-repeat: no-repeat, no-repeat; */
+ 
 }
-
-
 
 .container {
     max-width: 1200px;
@@ -310,7 +307,6 @@ body {
 
 .card-info {
     margin-top: 10px;
-    padding: 25px 25px 25px 25px;
     background-color: #f4f2f2;
     border-radius: 15px;
     width: 100%;
@@ -460,7 +456,6 @@ body {
 
 .section-content.flex-container {
     display: flex;
-    justify-content: flex-end;
     align-items: center; 
 }
 
@@ -476,9 +471,6 @@ body {
     padding: 60px 0;
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    /* position: relative; */
-    /* width: 100%; */
 }
 
 .testimonialsText {
@@ -505,10 +497,7 @@ body {
     display: flex;
     align-content: center;
     text-align: left;
-    /* width: 100%; */
-
     width: 400px;
-
     padding-top: 5%;
     padding-bottom: 10%;
 }
@@ -522,23 +511,10 @@ body {
     height: 250px;
     padding: 1em;
     display: none;
-    /* border-radius: 10px; */
-
-    /* font-weight: bold; */
-    
-    /* background-color:rgb(251, 248, 248); */
-    
-
-    /* width: 50%; */
-
- 
-    
-
     width: 600px;
     
   }
   
-
   .carousel__item p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
@@ -558,24 +534,12 @@ body {
   }
   .carousel__item--selected {
     display: block;
-    /* background-color:rgb(251, 248, 248); */
     border-radius: 10px;
-
-    /* justify-content: flex-end; */
-
-    /* float: right; */
     box-shadow: 0 5px 18px -2px rgba(0, 0, 0, 0.13);
   }
   
   .carousel__nav {
     padding: 10px 0;
-
-    /* width: 50%;
-    
-    text-align: center;
-    position: absolute;
-    top: 200px;
-    right:115%; */
     transform: translateX(-100%);
   }
   
@@ -593,22 +557,6 @@ body {
   .carousel__button--selected {
     background: #000;
   }
-
-/* 
-.slider-arrows {
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translateY(-50%);
-    display: flex;
-}
-
-.slider-arrow {
-    background-color: #f1f1f1;
-    padding: 5px;
-    cursor: pointer;
-}  */
-
 
 /* LOGOS */
 
@@ -638,16 +586,28 @@ body {
 }
 
 .subscribe-container i.bi-send {
-    font-size: 30px;
-    color:#fff;
-    margin-left: 95%;
-    margin-top: -1%;
-     display: inline-block;
-    border-radius: 60px;
-    background-color: #747DEF;
-    padding: 0.5em 0.7em;
+  font-size: 30px;
+  color: #fff;
+  margin-left: 95%;
+  margin-top: -1%;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #747DEF;
+  padding: 0.5em 0.7em;
+  width: 50px;
+  height: 50px;
 }
-
+.subscribe-container i.bi-send{
+  font-size: 30px;
+  color: #fff;
+  margin-left: 95%;
+  margin-top: -1%;
+  display: inline-block;
+  border-radius: 100px;
+  background-color: #747DEF;
+  width: 50px;
+  height: 50px;
+}
 .input-field {
     padding-left: 45px;
     width: 400px;
@@ -707,12 +667,9 @@ body {
 input[type="submit"] {
     background-color: #ff9800;
     color: #fff;
-    font-size: 16px;
-    
+    font-size: 16px; 
     padding: 12px 20px;
-
     margin-left: 20px;
-
     border-radius: 10px;
     text-decoration: none;
     cursor: pointer;
@@ -787,19 +744,20 @@ input[type="submit"] {
 }
 
 .social {
-    text-align: right;
-    margin-top: -160px; 
-    margin-bottom: 50px;
-    cursor: pointer;
+  margin-left: 250px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 .social i {
-    font-family: 'Poppins', sans-serif; 
-    font-weight: normal;
-    font-size: 20px;
-    margin-top: -30px;
-    margin-right: 10px; 
+  font-family: 'Poppins', sans-serif; 
+  font-weight: normal;
+  font-size: 20px;
+  margin-top: -30px;
+  margin-right: 10px; 
 }
+
 
 .allRightsReserved {
     text-align: center;
@@ -811,143 +769,7 @@ input[type="submit"] {
 
 /* Media */
 
-
-@media screen and (max-width: 767px) {
-
-body {
-
-  /* display: grid; 
- border: 0.05em solid red;
-  width:100%; */
-
-
-  /* display: flex; 
-  justify-content: center; */
-
-  margin-left: 15%;
-}
-
-.site-header {
-
-  /* align-items: center; */
-
-
-  margin-left: 25%;
-
-
-
-}
-
-.main-nav {
-  display:none;
-}
-
-.mobile-nav {
-  display:block;
-  position:relative;
-  width:100%;
-}
-.mobile-nav li {
-  list-style: none;
-}
-.mobile-nav ul {
-  flex-direction: column;
-  position:absolute;
-  top: 133px;
-  padding:20px;
-  background-color: #fff;
-  width:100%;
-  display:none;
-  z-index: 2;
-}
-.mobile-nav a {
-  font-size:2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-  margin:0 5px;
-  padding:10px 17px;
-  display:block;
-}
-.mobile-nav a:hover, .mobile-nav a:active {
-  color: #000000;
-}
-.mobile-nav a.icon {
-  float: right;
-  right:0;
-  top:60px;
-  color:#000000;
-}
-
-.header-background {
-  transform: scale(0.7);
-  padding-left: 200px;
-}
-
-.heroText {
-  width: 57%;
-}
-
-.heroText h1 {
-  font-size: 25px;
-
-}
-
-.heroPhoto { 
-  z-index: 0;
-}
-
-.logos {
-  width: 100%;
-}
-
-.services h2 {
-  font-family: 'Volkhov', sans-serif;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.service-row {
-  display: flex;
-  justify-content: center;
-  margin-right: 100px;
-}
-
-.destinations p {
-  font-family: 'Volkhov', sans-serif;
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 30px;
-
-}
-
-.tripToGreece img {
-  max-width: 60%;
-  border-radius: 5px;
-  box-shadow: 10px 30px 20px rgba(0, 0, 0, 0.1);
-}
-
-
-.testimonialsText h2 {
-    font-family: 'Volkhov', sans-serif;
-    font-size: 20px;
-    text-transform: capitalize;
-    margin: 0;
-    display: flex;
-    align-content: center;
-    text-align: left;
-    width: 100%;
-    width: 400px;
-    padding-top: 5%;
-    padding-bottom: 10%;
-}
-
-.footer-nav .flex-container {
-  flex-direction: column;
-  align-items: center;
-}
-}
-
-
+/* Tablet */
 
 @media all and (max-width:980px) {
   .main-nav {
@@ -1102,3 +924,193 @@ body {
 }
 
 }
+
+/* mobile */
+
+@media all and (max-width:640px) {
+ 
+.header-background {
+  margin-left: 5%;
+  width: 70%;
+  transform: scale(0.50);
+  padding-top: 20%;
+}
+
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  margin-right: 80px;
+}
+ 
+.hero {
+
+  margin-left: 20px;
+}
+.heroPhoto img {
+    margin-right: 15px;
+    width: 45%;
+    margin-top: -80px;
+}
+
+.heroText h1 {
+  font-size: 40px;
+}
+
+.heroText h2 {
+  font: 20px;
+}
+
+.heroText .bi {
+  position: absolute;
+  margin-left: 5%;
+}
+
+.heroText .bi::before {
+  margin-right: 30px;
+
+}
+.services {
+  padding-top: 40%;
+} 
+
+.services h2 {
+  font-size: 30px;
+}
+
+.service-row {
+     flex-direction: column;
+}
+
+.image-wrapper {
+  top: 12%;
+  transform: translateY(-2%);
+  margin-right: 5%;
+}
+
+.service {
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
+
+.destinations {
+  padding: 30px;
+  padding-top: 5px;
+}
+.container.bookaTrip {
+    width: 100%;
+}
+
+.bookaTripText h2 {
+  width: 100%;
+  font-size: 30px;
+}
+
+  .tripToGreece img {
+    max-width: 90%;
+    margin-left: 30px;
+}
+
+.carousel__item--selected {
+  margin-left: -25px;
+  width:100%;
+}
+
+
+.testimonialsText h1 {
+  font-size: 15px;
+}
+.testimonialsText h2 {
+  font-size: 20px;
+}
+
+.carousel__nav {
+  margin-top: -30%;
+}
+
+.logos img {
+  margin-right: 40px;
+}
+
+.heroText .bi {
+  position: absolute;
+}
+
+.image-container {
+  margin-left: 90%;
+  margin-top: 10%;
+}
+
+.topDestination {
+  max-width: 45%;
+  margin-right: 10px;
+}
+
+.section-content.flex-container {
+  margin-left: -1%;
+}
+
+.subscribe-container {
+  width: 90%;
+
+}
+
+.subscribe-container i.bi-send {
+  font-size: 15px;
+
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  line-height: 1;
+  vertical-align: -0.5em;
+  padding-left: 20%;
+  
+}
+
+.footer {
+  margin-left: 20px;
+}
+
+.logos {
+  display: block;
+  text-align: center;
+  margin-left: 10%;
+}
+
+.input-field {
+  width: 200px;
+  margin-top: 20px;
+}
+
+.input-row i {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 38px;
+}
+
+.container .jadooInfo {
+       margin-left: 40%;
+       margin-top: -33%;
+       padding-top:50px;
+}
+.image-container {
+margin-left: 85%;
+    margin-top: 10%;
+}    
+
+
+.jadooInfo-column ul a {
+  font-size: 8px;
+}
+.social {
+  margin-top: 0%;
+  margin-right: 250px;
+  font-size: 15px;
+}
+
+.jadooInfo-column h2 {
+  font-size: 12px;
+
+}
+
+.allRightsReserved {
+  margin-right: 5%;
+
+}
+}  

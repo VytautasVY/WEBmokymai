@@ -98,21 +98,13 @@
                             </div>
                                 <div class="card-trip">
                                     <i class="bi bi-cursor-fill">28 days trip</i>
-                            </div>
+                                 </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</section>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-</section>
 </section>
 <section class="container bookaTrip">
     <div class="bookaTripText">
