@@ -72,7 +72,6 @@ body {
     margin: 0 5px;
     padding: 10px 17px;
     color:#000;
-    
 }
 
 .signup-button {
@@ -1031,16 +1030,16 @@ input[type="submit"] {
 }
 
 .section-content.flex-container {
-  margin-left: -1%;
+  margin-left: 6%;
 }
 
 .subscribe-container {
-  width: 90%;
-
+  width: 95%;
+  margin-left: 2%;
 }
 
 .subscribe-container i.bi-send {
-  font-size: 15px;
+  font-size: 20px;
   width: 50px;
   height: 50px;
 }

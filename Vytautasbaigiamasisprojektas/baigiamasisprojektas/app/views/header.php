@@ -4,7 +4,6 @@
                 <div class="logo">
                     <a href="#"><img src="../app/images/jadoologo.png" alt="Jadoo"></a>
                 </div>
-
                     <nav class="main-nav">
                         <ul class="flex-container">
                             <li><a href="#">Destinations</a></li>
@@ -24,7 +23,6 @@
                             </li>
                         </ul>
                     </nav>
-
                     <nav class="mobile-nav">
                     <ul class="flex-container" id="mMenu">
                         <li><a href="#">Destinations</a></li>
