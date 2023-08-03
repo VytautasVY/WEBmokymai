@@ -916,16 +916,12 @@ input[type="submit"] {
 @media all and (max-width:640px) {
  
 .header-background {
-  margin-left: 5%;
   width: 70%;
   transform: scale(0.50);
   padding-top: 20%;
+
 }
 
-.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
-  margin-right: 80px;
-}
- 
 .hero {
 
   margin-left: 20px;
@@ -980,6 +976,7 @@ input[type="submit"] {
   padding: 30px;
   padding-top: 5px;
 }
+
 .container.bookaTrip {
     width: 100%;
 }
@@ -995,7 +992,6 @@ input[type="submit"] {
 }
 
 .carousel__item--selected {
-  margin-left: -25px;
   width:100%;
 }
 
@@ -1029,6 +1025,11 @@ input[type="submit"] {
   margin-right: 10px;
 }
 
+.card-info {
+
+  padding:3%;
+
+}
 .section-content.flex-container {
   margin-left: 6%;
 }
@@ -1042,12 +1043,6 @@ input[type="submit"] {
   font-size: 20px;
   width: 50px;
   height: 50px;
-}
-.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
-  line-height: 1;
-  vertical-align: -0.5em;
-  padding-left: 20%;
-  
 }
 
 .footer {
@@ -1081,8 +1076,9 @@ input[type="submit"] {
        margin-top: -33%;
        padding-top:50px;
 }
+
 .image-container {
-margin-left: 85%;
+    margin-left: 85%;
     margin-top: 10%;
 }    
 
@@ -1094,7 +1090,7 @@ margin-left: 85%;
   margin-top: 5%;
   margin-right: 250px;
   font-size: 15px;
-  display: flex;
+  /* display: flex; */
   align-items: center;
 }
 
