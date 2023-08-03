@@ -22,11 +22,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../app/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     </style>
     <script>
-    function myFunction() {
+        function myFunction() {
             let x = document.getElementById("mMenu")
             if (x.style.display === "block") {
                 x.style.display = "none"
@@ -44,89 +44,90 @@
        include '../app/views/footer.php';       
     ?>
 
-<script>
+    <script>
         Fancybox.bind('[data-fancybox="gallery"]', {});
-</script>
-<script>
-    document.querySelectorAll(".carousel").forEach(carousel => {
-        const items = carousel.querySelectorAll(".carousel__item");
-        const buttonsHtml = Array.from(items, () => {
-            return `<span class="carousel__button"></span>`;
-        });
+    </script>
+    <script>
+        document.querySelectorAll(".carousel").forEach(carousel => {
+            const items = carousel.querySelectorAll(".carousel__item");
+            const buttonsHtml = Array.from(items, () => {
+                return `<span class="carousel__button"></span>`;
+            });
 
-        carousel.insertAdjacentHTML("beforeend", `<div class="carousel__nav">
+            carousel.insertAdjacentHTML("beforeend", `<div class="carousel__nav">
             ${buttonsHtml.join("")}
         </div>
         `);
-        const buttons = carousel.querySelectorAll(".carousel__button");
-        buttons.forEach((button, i) => {
-            button.addEventListener("click", () => {
-                // un-select all items
-                items.forEach(item => item.classList.remove("carousel__item--selected"));
-                buttons.forEach(button => button.classList.remove("carousel__button--selected"));
+            const buttons = carousel.querySelectorAll(".carousel__button");
+            buttons.forEach((button, i) => {
+                button.addEventListener("click", () => {
+                    // un-select all items
+                    items.forEach(item => item.classList.remove("carousel__item--selected"));
+                    buttons.forEach(button => button.classList.remove(
+                        "carousel__button--selected"));
 
-                items[i].classList.add("carousel__item--selected");
-                button.classList.add("carousel__button--selected");
-            })
+                    items[i].classList.add("carousel__item--selected");
+                    button.classList.add("carousel__button--selected");
+                })
+            });
         });
-    });
-</script>
-<script>
-  const navbar = document.querySelector('.main-nav');
-  let navbarOffsetTop = navbar.offsetTop;
+    </script>
+    <script>
+        const navbar = document.querySelector('.main-nav');
+        let navbarOffsetTop = navbar.offsetTop;
 
-  function stickynavbar() {
-    if (window.scrollY >= navbarOffsetTop) {    
-      navbar.classList.add('sticky');
-    } else {
-      navbar.classList.remove('sticky');    
-    }
-  }
+        function stickynavbar() {
+            if (window.scrollY >= navbarOffsetTop) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
 
-  window.addEventListener('scroll', stickynavbar);
-</script>
+        window.addEventListener('scroll', stickynavbar);
+    </script>
 
-<script>
-    
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+    <script>
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
-window.onscroll = function () {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
-};
+        window.onscroll = function () {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollToTopBtn.style.display = "block";
+            } else {
+                scrollToTopBtn.style.display = "none";
+            }
+        };
 
-scrollToTopBtn.addEventListener("click", () => {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For other browsers;
-});
-</script>
-<script>
-    const fadeIns = document.querySelectorAll('.fade-in');
-  function isElementInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-      rect.top >= 0 &&
-      rect.left >= 0 &&
-      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-  }
+        scrollToTopBtn.addEventListener("click", () => {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For other browsers;
+        });
+    </script>
+    <script>
+        const fadeIns = document.querySelectorAll('.fade-in');
 
-  function handleFadeIn() {
-    const fadeIns = document.querySelectorAll('.fade-in');
-    fadeIns.forEach((fade) => {
-      if (isElementInViewport(fade)) {
-        fade.classList.add('visible');
-      }
-    });
-  }
+        function isElementInViewport(element) {
+            const rect = element.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
 
-  document.addEventListener('DOMContentLoaded', handleFadeIn);
-  window.addEventListener('scroll', handleFadeIn);
-</script>
+        function handleFadeIn() {
+            const fadeIns = document.querySelectorAll('.fade-in');
+            fadeIns.forEach((fade) => {
+                if (isElementInViewport(fade)) {
+                    fade.classList.add('visible');
+                }
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', handleFadeIn);
+        window.addEventListener('scroll', handleFadeIn);
+    </script>
 
 
 </body>
