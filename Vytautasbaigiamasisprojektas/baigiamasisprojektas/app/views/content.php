@@ -12,9 +12,9 @@
     </div>
 </section>
 <section class="services">
-    <div class="image-wrapper">
+        <div class="image-wrapper">
         <img src="../app/images/decore1.png" alt="decore1">
-    </div>
+        </div>
     <h1>Category</h1>
     <h2>We Offer Best Services</h2>
     <div class="service-row">
@@ -45,11 +45,11 @@
         <h3>We deliver outsourced aviation services for military customers.</h3>
     </div>
 </div>
-
-        </div>
+         </div>
     </div>
 </section>
 <section class="destinations">
+    <div class="fade-in">
     <div class="container">
         <div class="section-heading">
             <h1>Top Selling</h1>
@@ -108,6 +108,7 @@
 </section>
 <section class="container bookaTrip">
     <div class="bookaTripText">
+    <div class="fade-in">
         <h1>Easy and Fast</h1>
         <h2>Book your next trip in 3 easy steps</h2>
         <div class="text">
@@ -165,6 +166,7 @@
 </section>
 <section class="container subscribe">
     <div class="subscribe-container">
+    <div class="fade-in">
         <i class="bi bi-send send-icon"></i>
         <div class="subscribe-content">
             <div class="subscribeDetails">

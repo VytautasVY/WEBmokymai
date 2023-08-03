@@ -1,4 +1,4 @@
-<footer class="container footer">
+<footer class="container footer">  
                 <div class="footerJadoo">
                     <h1>Jadoo.</h1>
                     <p>Book your trip in minute, get full Control for much longer.</p>
