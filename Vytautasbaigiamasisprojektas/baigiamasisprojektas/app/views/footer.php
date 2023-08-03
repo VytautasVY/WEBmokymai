@@ -52,6 +52,8 @@
                     <p class="copyright">&copy; <?= date('Y'); ?> All rights reserved @jadoo.com</p>
                 </div>
             </footer>
+             <!-- Scroll-to-Top button -->
+            <button id="scrollToTopBtn" title="Go to top">Top</button>
     </div>
     </div>
     </section>

@@ -765,6 +765,25 @@ input[type="submit"] {
     font-weight: normal;  
 }
 
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #FFF1DA;
+  color: #000;
+  padding: 10px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+#scrollToTopBtn:hover {
+  background-color: beige;
+}
+
+
 /* Media */
 
 /* Tablet */
@@ -1102,7 +1121,6 @@ input[type="submit"] {
   margin-top: 5%;
   margin-right: 250px;
   font-size: 15px;
-  /* display: flex; */
   align-items: center;
 }
 
