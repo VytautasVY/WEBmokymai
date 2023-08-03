@@ -103,32 +103,6 @@ scrollToTopBtn.addEventListener("click", () => {
     document.documentElement.scrollTop = 0; // For other browsers;
 });
 </script>
-
-<!-- <script>
-  const fadeIns = document.querySelectorAll('.fade-in');
-
-  const fadeInOptions = {
-    rootMargin: '0px',
-    threshold: 0.4,
-  };
-
-  const fadeInObserver = new IntersectionObserver((entries, fadeInObserver) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      } else {
-        entry.target.classList.add('is-visible');
-        fadeInObserver.unobserve(entry.target);
-      }
-    });
-  }, fadeInOptions);
-
-  fadeIns.forEach((fadeIn) => {
-    fadeInObserver.observe(fadeIn);
-  });
-</script> -->
-<!-- Add the following JavaScript code just before the closing </body> tag -->
-
 <script>
     const fadeIns = document.querySelectorAll('.fade-in');
   function isElementInViewport(element) {
