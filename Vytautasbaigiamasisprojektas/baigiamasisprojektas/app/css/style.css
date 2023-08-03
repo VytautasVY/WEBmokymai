@@ -72,6 +72,18 @@ body {
     margin: 0 5px;
     padding: 10px 17px;
     color:#000;
+    display: block;
+}
+
+.main-nav {
+  z-index: 1000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #FFF1DA;
 }
 
 .signup-button {

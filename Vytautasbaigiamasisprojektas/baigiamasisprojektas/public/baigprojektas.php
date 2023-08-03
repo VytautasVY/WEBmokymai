@@ -71,6 +71,21 @@
         });
     });
 </script>
+<script>
+  const navbar = document.querySelector('.main-nav');
+  let navbarOffsetTop = navbar.offsetTop;
+
+  function stickynavbar() {
+    if (window.scrollY >= navbarOffsetTop) {    
+      navbar.classList.add('sticky');
+    } else {
+      navbar.classList.remove('sticky');    
+    }
+  }
+
+  window.addEventListener('scroll', stickynavbar);
+</script>
+
 
 </body>
 
