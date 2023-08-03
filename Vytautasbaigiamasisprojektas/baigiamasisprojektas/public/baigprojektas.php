@@ -61,7 +61,6 @@
         const buttons = carousel.querySelectorAll(".carousel__button");
         buttons.forEach((button, i) => {
             button.addEventListener("click", () => {
-                // un-select all items
                 items.forEach(item => item.classList.remove("carousel__item--selected"));
                 buttons.forEach(button => button.classList.remove("carousel__button--selected"));
 
