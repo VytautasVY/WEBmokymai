@@ -131,6 +131,7 @@
         document.addEventListener('DOMContentLoaded', handleFadeIn);
         window.addEventListener('scroll', handleFadeIn);
     </script>
+
 </body>
 
 </html>
