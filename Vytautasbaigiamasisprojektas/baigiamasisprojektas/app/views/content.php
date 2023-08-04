@@ -38,7 +38,6 @@
             <h2>Local events</h2>
             <h3>Barton vanity itself do in it. Preferd to men it engrossed listening.</h3>
         </div>
-
         <div class="service">
             <img src="../app/images/Customization.png" alt="Customization">
             <h2>Customization</h2>

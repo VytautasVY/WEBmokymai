@@ -341,7 +341,7 @@ li {
   margin-bottom: 5px;
   font-weight: normal;
   background-color: #f4f2f2;
-  padding: 10px;
+  padding-top:40px;
   border-radius: 5px;
   color: #000;
 }
@@ -1018,6 +1018,12 @@ input[type="submit"] {
   .service-row {
     flex-direction: column;
     align-items: center;
+    width:100%;
+  }
+
+  .service h3 {
+    font-size: 20px;
+    font-weight: normal;
   }
 
   .image-wrapper {
