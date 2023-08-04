@@ -43,10 +43,11 @@
        include '../app/views/content.php';
        include '../app/views/footer.php';       
     ?>
-
+    <!-- Fancybox -->
     <script>
         Fancybox.bind('[data-fancybox="gallery"]', {});
     </script>
+    <!-- Carousel section 'Testimonials -->
     <script>
         document.querySelectorAll(".carousel").forEach(carousel => {
             const items = carousel.querySelectorAll(".carousel__item");
@@ -72,6 +73,7 @@
             });
         });
     </script>
+    <!-- Sticky nav -->
     <script>
         const navbar = document.querySelector('.main-nav');
         let navbarOffsetTop = navbar.offsetTop;
@@ -86,7 +88,7 @@
 
         window.addEventListener('scroll', stickynavbar);
     </script>
-
+    <!-- Scroll to top button -->
     <script>
         const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -103,6 +105,7 @@
             document.documentElement.scrollTop = 0; // For other browsers;
         });
     </script>
+    <!-- Fade-ins animation -->
     <script>
         const fadeIns = document.querySelectorAll('.fade-in');
 
